@@ -1,0 +1,1287 @@
+<!docype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Agile Estimation</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <style>
+    h3, h4 {
+	margin-bottom: 0.5em !important;
+	margin-top: 0.5em !important;
+    }
+h2 {
+    margin-bottom: 0.5em !important;
+}
+p {
+    margin-top: 0.5em;
+/*    font-size: 80%;*/
+/*opacity: 0.3;*/
+}
+
+p em, li em {
+    font-style: normal !important;
+color: #82AEC4;
+}
+
+h3 {
+color: #8FB1C2 !important;
+}
+
+ul {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none !important;
+    padding:0;
+    margin:0;
+}
+
+ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+ul li:before {
+    content: "• ";
+    color: #7A75FF;
+}
+</style>
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<section>
+<h1>Agile Estimating</h1>
+
+<p><br/></p>
+
+<h2>Success through uncertainty</h2>
+
+</section>
+<section>
+<h1>The problem<br/>&amp;<br/>the goal</h1>
+
+<p>&nbsp;</p>
+
+</section>
+<section>
+<h1>The purpose of planning</h1>
+
+<p><em>Planning is everything. Plans are nothing.</em></p>
+
+<p>Field Marshal Helmuth Graf von Moltke</p>
+
+</section>
+<section>
+<h2>Uncertainty</h2>
+
+<p><img src="graphics/cone-of-uncertainty.jpg" alt="Cone of Uncertainty" title="" /></p>
+
+<p><em>As work progresses, estimates become more certain.</em></p>
+
+</section>
+<section>
+<h2>What should we build?</h2>
+
+<p><em>It depends!</em></p>
+
+<ul>
+<li>Features</li>
+<li>Resources</li>
+<li>Schedule</li>
+</ul>
+
+</section>
+<section>
+<h2>What's planning<br/>good for?</h2>
+
+<ul>
+<li>Reduce risk</li>
+<li>Reduce uncertainty</li>
+<li>Make better decisions</li>
+<li>Establish trust</li>
+</ul>
+
+</section>
+<section>
+<h2>Reduce risk</h2>
+
+<ul>
+<li>Learn more (e.g. work on a legacy system)</li>
+<li>Make it part of the estimate</li>
+</ul>
+
+</section>
+<section>
+<h2>Reduce uncertainty</h2>
+
+<p>Don't build the wrong product.</p>
+
+<p>Work generates knowledge:</p>
+
+<p>Bring it to Team and Product Owner.</p>
+
+</section>
+<section>
+<h2>Make better decisions</h2>
+
+<h3>Project</h3>
+
+<ul>
+<li>Fits into market window?</li>
+<li>Worth doing for the cost?</li>
+</ul>
+
+<h3>Staff</h3>
+
+<ul>
+<li>Enough available?</li>
+<li>Right people available?</li>
+</ul>
+
+<h3>Tradeoffs</h3>
+
+<ul>
+<li>Time vs cost</li>
+<li>Features vs time</li>
+</ul>
+
+</section>
+<section>
+<h2>Trust</h2>
+
+<p>Reliable estimates</p>
+
+<ul>
+<li>Reliable delivery</li>
+<li>Determine scope</li>
+</ul>
+
+</section>
+<section>
+<h2>Bad Plan</h2>
+
+<p>“I'll be done in 4 weeks!”</p>
+
+<p><em>(now let me work!)</em></p>
+
+</section>
+<section>
+<h2>Informative Plan</h2>
+
+<h3>baseline expectations</h3>
+
+<ul>
+<li>Completion in 3-4 Sprints</li>
+<li>Features 1-5 will be completed in the first 2 Sprints</li>
+<li>Key assumptions are documented</li>
+<li>How we will measure progress collaboratively.</li>
+</ul>
+
+<p><em>Stakeholder can infer the degree of confidence.</em></p>
+
+</section>
+<section>
+<h2>Good Plan</h2>
+
+<p><em>Reliable enough for stakeholders to make decisions.</em></p>
+
+</section>
+<section>
+<h2>Usefulness &amp; correctness</h2>
+
+<p><em>Can incorrect plans be useful?</em></p>
+
+</section>
+<section>
+<h2>Refined Plan</h2>
+
+<ul>
+<li>Day 0. Estimation: 6 Sprints</li>
+<li>Sprint 2. Estimation: 7 Sprints</li>
+</ul>
+
+<p><em>As knowledge grows, the plan is refined.</em></p>
+
+<p><strong>The plan was incorrect, but useful.</strong></p>
+
+</section>
+<section>
+<h2>Wrong Plan</h2>
+
+<ul>
+<li>Day 0 - Estimation: 4 Sprints</li>
+<li>Sprint 4 - Estimation: 8 Sprints</li>
+</ul>
+
+<p><em>Seriously underestimated. Never refined.</em></p>
+
+<p><em>Grows to 200% at the last moment.</em></p>
+
+<p><strong>The plan was wrong. We are in trouble.</strong></p>
+
+</section>
+<section>
+<h1>Why planning fails</h1>
+
+<p><em>No plan survives contact with the enemy.</em></p>
+
+<p>Field Marshal Helmuth Graf von Moltke</p>
+
+</section>
+<section>
+<h2>Planning by activity instead of feature</h2>
+
+<ul>
+<li>Customer value is in features</li>
+<li>Schedule review looks for forgotten activities</li>
+<li>Harder to look for missing features</li>
+</ul>
+
+<h3>Why?</h3>
+
+<ul>
+<li>Activities don't finish early</li>
+<li>Lateness is passed down the schedule</li>
+<li>Activities are not independent</li>
+</ul>
+
+</section>
+<section>
+<h2>Activities don't finish early</h2>
+
+<h3>If you finish early</h3>
+
+<ul>
+<li>It looks like you overestimated</li>
+<li>Gives you oportunity to add unnecessary<br/>bells-and-whistles</li>
+</ul>
+
+<h3>Parkinson's Law</h3>
+
+<p><em>Work expands so as to fill the time available for its completion.</em></p>
+
+</section>
+<section>
+<h2>Lateness is passed down the schedule</h2>
+
+<p><img src="graphics/why-planning-fails.jpg" alt="Why Planning Fails" title="" /></p>
+
+<p><em>Testing will start late if anything goes worse than planned.</em></p>
+
+<p><em>It will start early <strong>only if everything goes better than planned</strong>.</em></p>
+
+</section>
+<section>
+<h2>Activities are not independent</h2>
+
+<p><em>If writing a new Service Costs view takes 50% longer than expected:</em></p>
+
+<ol>
+<li>Will the other views also take extra time?</li>
+<li>Will the other views take less time, so the mistake will balance out?</li>
+</ol>
+
+<p><em>Probably <strong>1.</em></strong></p>
+
+<ul>
+<li>The task was more complex than expected.</li>
+<li>It was more difficult to test it.</li>
+</ul>
+
+</section>
+<section>
+<h2>Multitasking causes more delays</h2>
+
+<p><img src="graphics/multitasking.jpg" alt="Multitasking" title="" /></p>
+
+<p><em>Effect of multitasking on productivity.</em></p>
+
+</section>
+<section>
+<h2>Multitasking</h2>
+
+<h3>2 tasks</h3>
+
+<p>Blocked on <strong>A</strong> → Work on <strong>B</strong>.</p>
+
+<h3>>2 tasks</h3>
+
+<ul>
+<li>Work remains in progress longer</li>
+<li>Cookie licking</li>
+<li>Task switching overhead</li>
+<li>Favours developer overload</li>
+</ul>
+
+</section>
+<section>
+<h2>Overload</h2>
+
+<p><em>100% load: no margin to cope with uncertainty.</em></p>
+
+<p><img src="graphics/traffic-jam.jpg" alt="Traffic jam" title="" /></p>
+
+</section>
+<section>
+<h2>Features not developed by priority</h2>
+
+<h3>Wishful thinking</h3>
+
+<p>If all work will be completed,<br/>customers don't care about the sequence.</p>
+
+<h3>Reality</h3>
+
+<p>Projects have an inherent uncertainty.</p>
+
+<ul>
+<li>Reduce the scope</li>
+<li>Drop features</li>
+</ul>
+
+</section>
+<section>
+<h2>Ignoring uncertainty</h2>
+
+<p>Common (wrong) assumptions:</p>
+
+<h3>Users will never</h3>
+
+<ul>
+<li>Change their minds</li>
+<li>Refine their opinions</li>
+<li>Come up with new needs</li>
+</ul>
+
+<h3>We will always</h3>
+
+<ul>
+<li>Identify ahead every activity</li>
+<li>Foresee every shortcoming</li>
+<li>Complete every task on time</li>
+</ul>
+
+</section>
+<section>
+<h2>Iterate</h2>
+
+<ul>
+<li>Work in iterations.</li>
+<li>Demo early and often.</li>
+<li>Revise the plan when needed.</li>
+</ul>
+
+<p><em>Identifying the shortcomings early and revising the plan reduces uncertainty.</em></p>
+
+<ul>
+<li>Missing tasks can be added to plans.</li>
+<li>Bad estimates can be corrected.</li>
+</ul>
+
+<p><em>Focus on plan →</em> Focus on planning</p>
+
+</section>
+<section>
+<h2>Estimates become commitments</h2>
+
+<h3>An estimate is a probability</h3>
+
+<p>Will the Service Costs be completed<br/>by the end of the day?</p>
+
+<ul>
+<li>Asked on September 24 2012: 0%</li>
+<li>Asked on September 24 2022: 100%</li>
+</ul>
+
+<p><em>estimate ≠ commitment</em></p>
+
+</section>
+<section>
+<h1>Agile Planning</h1>
+
+<p><em>A good plan violently executed now is better<br/>than a perfect plan executed next week.</em></p>
+
+<p>General George S. Patton</p>
+
+</section>
+<section>
+<h2>Agile values</h2>
+
+<ul>
+<li>Individuals and interactions <strong><em>></em></strong> processes and tools
+<!--* Working software ***>*** comprehensive documentation--></li>
+<li>Customer collaboration <strong><em>></em></strong> contract negotiation</li>
+<li>Responding to change <strong><em>></em></strong> following a plan</li>
+</ul>
+
+</section>
+<section>
+<h2>Individuals &amp; interactions</h2>
+
+<p>A <strong>well-functioning</strong> team<br/>
+of <strong>great</strong> individuals<br/>
+with mediocre tools </p>
+
+<p><em>outperforms</em></p>
+
+<p>a <strong>dysfunctional</strong> team<br>
+of <strong>mediocre</strong> individuals<br/>
+with great tools and processes.</p>
+
+<p><em>Processes and tools cannot compensate<br/>for a poor team.</em></p>
+
+</section>
+<section>
+<h2>Check!</h2>
+
+<p>We have a great team.</p>
+
+<p>We work on improving continuously.</p>
+
+<p><em>We must keep up the good work.</em></p>
+
+</section>
+<section>
+<h2>Customer collaboration</h2>
+
+<p><em>All parties to the project work toward the same goals.</em></p>
+
+</section>
+<section>
+<h2>Contract negotiation</h2>
+
+<p>Contracts are often necessary.</p>
+
+<p><em>However:</em></p>
+
+<ul>
+<li>Contract's terms and details determine if the parties collaborate or compete.</li>
+<li>Contract negotiation sets the development team and the project customer at odds right from the start. </li>
+</ul>
+
+</section>
+<section>
+<h2>Responding to change</h2>
+
+<p><em>Ultimate focus:</em> delivering as much value as possible.</p>
+
+<ul>
+<li><em>It is impossible</em> to know every detail of every feature the customer wants.</li>
+<li><em>It is inevitable</em> that users will come up with new ideas.</li>
+<li><em>It is inevitable</em> that users will change their minds on the priorities.</li>
+</ul>
+
+</section>
+<section>
+<h2>Agile plan</h2>
+
+<h3>One view of the future</h3>
+
+<p>A plan is <strong>one</strong> view of the future, but many views are possible.</p>
+
+<p>As a team gains knowledge and experience, they will factor them into the plan.</p>
+
+</section>
+<section>
+<h2>Agile approach</h2>
+
+<ul>
+<li>Work as one</li>
+<li>Work in short iterations</li>
+<li>Deliver something each iteration</li>
+<li>Focus on business priorities</li>
+<li>Inspect and adapt</li>
+</ul>
+
+</section>
+<section>
+<h2>Work As One</h2>
+
+<p><em>No room to “throw over the wall”</em></p>
+
+<ul>
+<li>Analysts do not throw requirements over the wall to designers.</li>
+<li>Designers and architects do not throw designs over a wall to coders.</li>
+<li>Coders do not throw half-tested code over a wall to testers. </li>
+</ul>
+
+<h3>We’re all in this together</h3>
+
+</section>
+<section>
+<h2>Work in Short Iterations</h2>
+
+<p><em>No grand delineation of phases</em></p>
+
+<ol>
+<li>Very short initial design / modeling phase</li>
+<li>All work happens concurrently<br/>(analysis, design, coding, testing...)</li>
+</ol>
+
+<p><em>Iterations are timeboxed</em></p>
+
+<p>Iterations finish on time<br/>even if functionality is dropped.</p>
+
+</section>
+<section>
+<h2>Deliver Something Each Iteration</h2>
+
+<ul>
+<li>The Team makes progress by adding one or more small features in each iteration.</li>
+<li>Each added feature is coded, tested, and of releaseable quality.</li>
+<li>Customers see the results early.</li>
+<li>The plan can be refined early and often.</li>
+</ul>
+
+</section>
+<section>
+<h2>Focus on Business Priorities</h2>
+
+<ul>
+<li><em>Team:</em> delivers features in the order specified by the product owner.</li>
+<li><em>Product Owner:</em> prioritizes the features to optimize ROI.</li>
+<li>Features must be written so as to minimize the technical dependencies among them.</li>
+</ul>
+
+<h3>Focus</h3>
+
+<p>The team focuses on delivering <strong>user-valued features</strong> rather than on completing isolated <strong>tasks</strong>.</p>
+
+</section>
+<section>
+<h2>User Stories</h2>
+
+<ul>
+<li>Requirements are refined as the work progresses</li>
+<li>To each user story follow as many conversations between the developers and the product owner as needed.
+<ul>
+<li>Conversations as often as needed</li>
+<li>Include whoever is necessary<br/><em>(Product, Architecture, Operations...)</em></li>
+</ul></li>
+<li>Focus: written → <strong>spoken</strong>.</li>
+</ul>
+
+</section>
+<section>
+<h2>Inspect and Adapt</h2>
+
+<p><em>The plan created at the start of any project is not a guarantee of what will happen.</em></p>
+
+<ul>
+<li>Personnel may come or go</li>
+<li>Technologies will work better / worse</li>
+<li>Users will change their minds</li>
+<li>Competitors may force us to respond faster</li>
+<li>...</li>
+</ul>
+
+<h3>Change is</h3>
+
+<p>Opportunity and need to update the plan<br/>to better reflect the reality.</p>
+
+</section>
+<section>
+<h2>Traditional vs Agile</h2>
+
+<h3>Traditional</h3>
+
+<p>Run 10km.</p>
+
+<h3>Agile</h3>
+
+<p>Run as far as possible<br/>
+until the end of the Sprint.</p>
+
+</section>
+<section>
+<h2>Agile planning</h2>
+
+<h3>Acknowledge uncertainty</h3>
+
+<p>The result is somewhat unknown,<br/>and unknowable in advance.</p>
+
+<h3>Revise</h3>
+
+<p><em>Planning means</em> setting and revising goals<br/>that lead to a longer-term objective.</p>
+
+</section>
+<section>
+<h2>Levels of planning</h2>
+
+<p><img src="graphics/onion.jpg" alt="Planning Onion" title="" /></p>
+
+<p><em>Agile teams plan at least at the release,<br/>iteration, and day levels.</em></p>
+
+</section>
+<section>
+<h2>Conditions of Satisfaction</h2>
+
+<p><em>Start of release planning:</em></p>
+
+<p>Team and Product Owner collaboratively explore the Product Owner’s conditions of satisfaction.</p>
+
+<p>If all conditions cannot be met in one Sprint, the Product Owner and the Team agree on the schedule.</p>
+
+</section>
+<section>
+<h1>Estimating size</h1>
+
+<p><em>To achieve great things, two things are needed:<br/>a plan, and not quite enough time.</em></p>
+
+<p>Leonard Bernstein</p>
+
+</section>
+<section>
+<h2>Estimating size</h2>
+
+<p><img src="graphics/estimating-size.jpg" alt="Estimating Size" title="" /></p>
+
+<p><em>Schedule depends on the duration derived from the estimated size.</em></p>
+
+</section>
+<section>
+<h2>Paint a house</h2>
+
+<p><img src="graphics/house.jpg" alt="Paint a house" title="" /></p>
+
+<p><em>How long does it take to paint this house?</em></p>
+
+</section>
+<section>
+<h2>Story Points are relative</h2>
+
+<p>Story points express the overall size of a user story, feature, or other piece of work.</p>
+
+<p>Raw values are unimportant. Relative values matter:</p>
+
+<p><em>2-point story: 2 × 1-point story.</em></p>
+
+</section>
+<section>
+<h2>Velocity</h2>
+
+<p><em>Velocity Corrects Estimation Errors</em></p>
+
+<p>As a team begins making progress through the user stories of a project, their velocity becomes apparent over the first few iterations.</p>
+
+</section>
+<section>
+<h2>Velocity</h2>
+
+<p><em>e.g.</em></p>
+
+<ul>
+<li>A team estimates a project to include 200 points of work.</li>
+<li>They initially believe they will be able to complete 25 points per iteration, which means they will finish in 8 iterations.</li>
+<li>Once the project begins, their observed velocity is only 20.</li>
+<li>Without having to re-estimate: the project will take 10 iterations rather than 8.</li>
+</ul>
+
+</section>
+<section>
+<h2>Ideal time<br/>vs Elapsed time</h2>
+
+<p><em>Why they differ</em></p>
+
+<ul>
+<li>Supporting the current release</li>
+<li>Sick time</li>
+<li>Meetings / Discussions</li>
+<li>Demos</li>
+<li>Reviews</li>
+<li>Task switching</li>
+<li>Bug fixing</li>
+</ul>
+
+</section>
+<section>
+<h2>Estimating in ideal time</h2>
+
+<p>It is not necessary to consider the impact of the overhead.</p>
+
+<p>Ideal time doesn't depend on who spends it.</p>
+
+<p>Ideal days: another estimate of size.</p>
+
+</section>
+<section>
+<h1>Techniques for estimating</h1>
+
+<p><em>Prediction is very difficult, especially about the future.</em></p>
+
+<p>Niels Bohr</p>
+
+</section>
+<section>
+<h2>Effort vs result</h2>
+
+<p><img src="graphics/effort-vs-result.jpg" alt="Effort vs result" title="" /></p>
+
+<p><em>Additional estimation effort yields very little value beyond a certain point.</em></p>
+
+</section>
+<section>
+<h2>Estimates are shared</h2>
+
+<p><em>Agile teams estimate collaboratively.</em></p>
+
+<p>Estimates prepared by those who will do the work are better than estimates prepared by anyone else.</p>
+
+<p><em>However:</em></p>
+
+<ul>
+<li>We tend not to know who will do each task.</li>
+<li>Estimating together prevents forgetting key details.</li>
+<li>The team remembers and uses past mistakes to correct the new ones.</li>
+</ul>
+
+<p><em>We're all in this together.</em></p>
+
+</section>
+<section>
+<h2>Estimation scale</h2>
+
+<p>Common: <em>1, 2, 3, 5, 8 and 13</em>.</p>
+
+<p>Also <em>20, 40 and 100</em> for larger or distant items.</p>
+
+</section>
+<section>
+<h2>Larger User Stories</h2>
+
+<p><em>We want to estimate user stories whose sizes are within one order of magnitude.</em></p>
+
+<h3>Epic</h3>
+
+<p>Larger user story, for features we’re not sure we want.</p>
+
+<h3>Theme</h3>
+
+<p>Combination of related user stories as a single entity<br/>for estimating and planning.</p>
+
+</section>
+<section>
+<h2>Deriving an estimate</h2>
+
+<ul>
+<li>Expert opinion</li>
+<li>Analogy</li>
+<li>Disaggregation</li>
+</ul>
+
+</section>
+<section>
+<h2>Discussion during Planning Poker</h2>
+
+<p><img src="graphics/hourglass.jpg" alt="Hourglass" title="" /></p>
+
+<p><em>Discussion must be efficient—2 minute hourglass</em></p>
+
+<ul>
+<li>Anyone can turn the timer over at any time.</li>
+<li>When the sand runs out, the next round is played.</li>
+</ul>
+
+</section>
+<section>
+<h1>Re-Estimating</h1>
+
+<p><em>There’s no sense in being precise<br/>when you don’t even know what you’re talking about.</em></p>
+
+<p>John von Neumann</p>
+
+</section>
+<section>
+<h2>When to re-estimate</h2>
+
+<p><img src="graphics/user-stories.jpg" alt="User Stories" title="" /></p>
+
+<ul>
+<li>Stories 1, 2 and 6 are planned for the first Sprint.</li>
+<li>At the end of the Sprint, only 1 and 6 are finished.</li>
+<li>Team says that Story 1 was underestimated.<br/><em>"It should have been at least a 6."</em></li>
+</ul>
+
+</section>
+<section>
+<h2>What to do?</h2>
+
+<p><em>Let's examine the alternatives</em></p>
+
+<ul>
+<li>No re-estimating.</li>
+<li>Re-estimating the finished story.</li>
+<li>Re-estimating when relative size changes</li>
+</ul>
+
+</section>
+<section>
+<h2>No Re-Estimating</h2>
+
+<ul>
+<li>Velocity was 8.</li>
+<li>On the next Sprint, it's expected that the Team will complete 8 story points.</li>
+<li>The Team knows that they cannot complete 2 and 3, because it's too big even though it's 8 points.</li>
+</ul>
+
+<p><em>If a task takes longer, it often means that the related tasks will take longer too.</em></p>
+
+</section>
+<section>
+<h2>Re-Estimating the finished story</h2>
+
+<p><em>Maybe adjusting only the estimate of Story 1 fixes this problem?</em></p>
+
+<ul>
+<li>The Team re-estimates the Story 1 as 6 points.</li>
+<li>Velocity was 11.</li>
+<li>Next Sprint: the Team should complete 11 story points.</li>
+<li>But they know that they cannot complete 2, 3 and 4: it's too big even though it's 11 points.</li>
+</ul>
+
+</section>
+<section>
+<h2>Re-Estimating When Relative Size Changes</h2>
+
+<ul>
+<li>The team re-estimates each of the charting stories.</li>
+<li>The estimates for Stories 1, 2, and 3 are double what they were.</li>
+<li>Velocity was 11.</li>
+<li>Next Sprint: the Team should complete 11 story points.</li>
+<li>Only Story 2 (now 10 points) will be selected.</li>
+</ul>
+
+</section>
+<section>
+<h2>Partially Completed Stories</h2>
+
+<p><em>Should they contribute to the Velocity?</em></p>
+
+<p>Many favor an all-or-nothing approach.</p>
+
+<ul>
+<li>Easier to calculate</li>
+<li>Velocity will fluctuate a bit.</li>
+<li>Works well if the Team can work on Story on the following Sprint.</li>
+</ul>
+
+<h3>Avoid the dilemma</h3>
+
+<p>Divide into User Stories that are small enough.</p>
+
+</section>
+<section>
+<h2>Purpose of Re-Estimating</h2>
+
+<ul>
+<li>Whenever the team feels one or more stories are misestimated relative to other stories, re-estimate as few stories as possible to bring the relative estimates back in line.</li>
+<li>Use re-estimating as a learning experience for estimating future user stories.</li>
+<li>Do not re-estimate only because progress is not coming as rapidly as you’d expected. Let velocity take care of most estimation inaccuracies.</li>
+</ul>
+
+<p><em>Failure to learn is the only true failure.</em></p>
+
+</section>
+<section>
+<h1>Story Points<br/>&amp;<br/>Ideal Days</h1>
+
+<p><em>If you tell people where to go, but not how to get there, you’ll be amazed at the results.</em></p>
+
+<p>General George S. Patton</p>
+
+</section>
+<section>
+<h2>Story points</h2>
+
+<ul>
+<li>Cross-functional estimation.
+<ul>
+<li>Team members have different expertises.</li>
+</ul></li>
+<li>Estimates do not decay.
+<ul>
+<li>Velocity may change—size doesn't.</li>
+</ul></li>
+<li>Pure measure of size.
+<ul>
+<li>We can estimate by analogy.</li>
+<li>No temptation to compare them with reality.</li>
+</ul></li>
+<li>Faster.</li>
+<li>My ideal days are not your ideal days.
+<ul>
+<li>Size doesn't depend on who does the task.</li>
+</ul></li>
+</ul>
+
+</section>
+<section>
+<h2>Ideal days</h2>
+
+<ul>
+<li>Easier to explain outside the team.</li>
+<li>Easier at first.</li>
+</ul>
+
+</section>
+<section>
+<h2>Both</h2>
+
+<p>It's very common to do both.</p>
+
+<ul>
+<li>Estimated backlog in Story Points.</li>
+<li>At Sprint Planning:
+<ul>
+<li>Split in tasks.</li>
+<li>Estimate them in ideal time.</li>
+</ul></li>
+</ul>
+
+</section>
+<section>
+<h2>What should we do?</h2>
+
+<h3>Story points</h3>
+
+<ul>
+<li>Estimated backlog of stories, epics and themes.</li>
+<li>At Sprint Planning, for each User Story:
+<ul>
+<li>Split in tasks.</li>
+<li>Tasks must be small.</li>
+<li>You sould be able to complete one per day.</li>
+</ul></li>
+<li>At Daily Scrum, update the remaining work.</li>
+</ul>
+
+</section>
+<section>
+<h1>Splitting User Stories</h1>
+
+<p><em>And all dared to brave unknown terrors, to do mighty deeds, to boldly split infinitives that no man had split before—and thus was the Empire forged.</em></p>
+
+<p>Douglas Adams</p>
+
+</section>
+<section>
+<h2>When to split?</h2>
+
+<ul>
+<li>If it's too large for a Sprint.</li>
+<li>If it won't fit in the Sprint, but a portion will.</li>
+<li>If a more accurate estimate is necessary.</li>
+</ul>
+
+</section>
+<section>
+<h2>How to split?</h2>
+
+<h3>Data boundaries</h3>
+
+<p>As a user, I can create an Event and define name, location, products and service costs.</p>
+
+<ul>
+<li>Event name and location.</li>
+<li>Products.</li>
+<li>Service Costs.</li>
+</ul>
+
+<h3>Exceptional cases</h3>
+
+<p>Events with Seating: As a user, I can define the seating venue during event creation.</p>
+
+</section>
+<section>
+<h2>How to split?</h2>
+
+<h3>Operational boundaries</h3>
+
+<ul>
+<li>CRUD</li>
+<li>Displaying data from different sources.</li>
+</ul>
+
+<h3>Cross-cutting concerns</h3>
+
+<ul>
+<li><em>Security:</em> Separate checking user rights.</li>
+<li><em>Error handling:</em> Throwing an exception vs notifying the user.</li>
+</ul>
+
+<p>Create two versions of the story: one with and one without support for the cross-cutting concern.</p>
+
+</section>
+<section>
+<h2>How to split?</h2>
+
+<h3>Performance constraints</h3>
+
+<ul>
+<li>Adding cache.</li>
+<li>Optimizing queries.</li>
+</ul>
+
+<p><em>But don't “throw it over the wall” to yourself</em></p>
+
+<h3>Mixed priority</h3>
+
+<ul>
+<li>Logging in vs strong passwords</li>
+</ul>
+
+</section>
+<section>
+<h2>How not to split?</h2>
+
+<h3>In tasks</h3>
+
+<ul>
+<li>Write the user interface.</li>
+<li>Write the database models.</li>
+</ul>
+
+<p>Value is in the features.</p>
+
+<p>Fire a tracer bullet.</p>
+
+</section>
+<section>
+<h2>Related changes</h2>
+
+<p><em>While I'm in that code, I might as well...</em></p>
+
+<ul>
+<li>Sometimes (but not always) it's a very good idea to do them.</li>
+<li>Consider the priority.</li>
+</ul>
+
+</section>
+<section>
+<h1>Iteration Planning</h1>
+
+<p><em>You improvise. You adapt. You overcome.</em></p>
+
+<p>Clint Eastwood</p>
+
+</section>
+<section>
+<h2>Planning</h2>
+
+<ul>
+<li>Adjust priorities.</li>
+<li>Select User Stories.</li>
+<li>Split into tasks.</li>
+<li>Estimate tasks.</li>
+</ul>
+
+</section>
+<section>
+<h2>Velocity-driven</h2>
+
+<ul>
+<li>Determine target velocity.</li>
+<li>Calculate how much the Team should do.</li>
+</ul>
+
+</section>
+<section>
+<h2>Commitment-driven</h2>
+
+<ul>
+<li>Estimate the Team's velocity.</li>
+<li>∀ user story, in priority order:
+<ul>
+<li>Split in tasks.</li>
+<li>Estimate the tasks.</li>
+<li>Ask the Team:<br/><em>do you commit to delivering this functionality?</em></li>
+</ul></li>
+</ul>
+
+</section>
+<section>
+<h2>Relating story points to hours</h2>
+
+<p><img src="graphics/probability-story-point.jpg" alt="Relating story points to hours" title="" /></p>
+
+<p><em>Distribution of the time needed to complete a one-point user story.</em></p>
+
+</section>
+<section>
+<h2>Relating story points to hours</h2>
+
+<p><img src="graphics/probability-3-story-points.jpg" alt="Relating 3 story points to hours" title="" /></p>
+
+<p><em>Distribution of times to complete one-, two-, and three-point stories.</em></p>
+
+</section>
+<section>
+<h2>Frequent replanning</h2>
+
+<ul>
+<li>It's impossible to make a perfect plan.</li>
+<li>Solution: revise often.</li>
+</ul>
+
+<p>Focus: <em>perfect plan →</em> plan that is useful right now.</p>
+
+</section>
+<section>
+<h1>Buffering Plans for uncertainty</h1>
+
+<p><em>To be uncertain is to be uncomfortable, but to be certain is to be ridiculous.</em></p>
+
+<p>chinese proverb</p>
+
+</section>
+<section>
+<h2>Feature buffers</h2>
+
+<p><img src="graphics/completion-times.jpg" alt="Completion times" title="" /></p>
+
+<p><em>The distribution of completion times</em></p>
+
+</section>
+<section>
+<h2>Distribution of completion time</h2>
+
+<ul>
+<li>Not much can be done to accelerate the completion.</li>
+<li>An indefinite number of things can go wrong and delay it.</li>
+<li>The probability of the peak is less than 50%.</li>
+</ul>
+
+</section>
+<section>
+<h2>Finishing early</h2>
+
+<p><img src="graphics/cummulative-probability.jpg" alt="Cummulative probability" title="" /></p>
+
+<p><em>The cumulative distribution of completion times.</em></p>
+
+</section>
+<section>
+<h2>Schedule Buffer</h2>
+
+<p>Necessary margin of safety added to the sum of estimates from which local safety has been removed.</p>
+
+<ul>
+<li>Better than using only pessimistic estimates.</li>
+<li>It's not padding: acknowledges uncertainty backs the commitment.</li>
+</ul>
+
+</section>
+<section>
+<h2>Buffer size</h2>
+
+<h3>Multiple estimates</h3>
+
+<ul>
+<li>Give optimistic, nominal and pessimistic estimates</li>
+<li><a href="https://wiki.paylogic.eu/PERT">&nbsp;&nbsp;Calculate the final estimate</a>.</li>
+</ul>
+
+<h3>50% estimates</h3>
+
+<ul>
+<li>Give estimates with 50% probability.</li>
+<li>Calculate the buffer as the half of their sum.</li>
+</ul>
+
+<p>Simpler, but not influenced by the actual uncertainty around specific user stories.</p>
+
+</section>
+<section>
+<h1>Closing</h1>
+
+<ul>
+<li>Estimate in Story Points.</li>
+<li>Plan features, not tasks.</li>
+<li>Tasks are small enough to be done in 1 day.</li>
+<li>Keep Product Owner in the loop.</li>
+<li>Replan when necessary.</li>
+<li>Acknowledge uncertainty.</li>
+<li>Acknowledge the importance of learning.</li>
+<li>Plan features of the right size.</li>
+<li>Base estimates and plans on facts.</li>
+<li>Leave a buffer.</li>
+</ul>
+
+</section>
+<section>
+<h1>Discussion</h1>
+</section>			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'sky', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+<script>
+//setInterval(function() {location.reload(false)}, 2000);
+</script>
+	</body>
+</html>
+
+
+

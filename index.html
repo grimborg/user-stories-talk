@@ -1,0 +1,414 @@
+<!docype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Agile Estimation</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <style>
+    h3, h4 {
+	margin-bottom: 0.5em !important;
+	margin-top: 0.5em !important;
+    }
+h2 {
+    margin-bottom: 0.5em !important;
+}
+p {
+    margin-top: 0.5em;
+/*    font-size: 80%;*/
+/*opacity: 0.3;*/
+}
+
+p em, li em {
+    font-style: normal !important;
+color: #82AEC4;
+}
+
+h3 {
+color: #8FB1C2 !important;
+}
+
+ul {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none !important;
+    padding:0;
+    margin:0;
+}
+
+ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+ul li:before {
+    content: "• ";
+    color: #7A75FF;
+}
+</style>
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<section>
+<h1>User Stories</h1>
+
+<p><br/></p>
+
+<h2>They do come true!</h2>
+
+</section>
+<section>
+<h1>Overview</h1>
+
+<p>&nbsp;</p>
+
+</section>
+<section>
+<h2>What are User Stories?</h2>
+
+<ul>
+<li>Short description of valued functionality.</li>
+<li>Discussion.</li>
+</ul>
+
+</section>
+<section>
+<h2>Written by the Product Team</h2>
+
+<ul>
+<li>User Stories must be written in the language of the business, not technical jargon.</li>
+<li>As the primary product visionaries, Product is in the best position teo describe the behavior of the product.</li>
+</ul>
+
+</section>
+<section>
+<h1>User Stories</h1>
+
+<h2>Independent, Negotiable, Valuable, Estimatable, Small, Testable</h2>
+
+</section>
+<section>
+<h2>Independent</h2>
+
+<p>User Stories must be as independent as possible.</p>
+
+</section>
+<section>
+<h2>Tasks that depend on each other:</h2>
+
+<ul>
+<li>Customers can pay with Visa (3 days)</li>
+<li>Customers can pay with MasterCard (0.5 days)</li>
+<li>Customers can pay with Visa Electron (0.5 days)</li>
+</ul>
+
+</section>
+<section>
+<h2>Breaking the dependency</h2>
+
+<ul>
+<li>A customer can pay with one type of credit/debit card (3 days)</li>
+<li>A customer can pay with two additional types of credit cards (1 day)</li>
+</ul>
+
+<p>Note: Accept Visa, Visa Electron and MasterCard.</p>
+
+</section>
+<section>
+<h2>When that's not possible</h2>
+
+<ul>
+<li>Customers can pay with Visa (3 | 0.5 days)</li>
+<li>Customers can pay with MasterCard (3 | 0.5 days)</li>
+<li>Customers can pay with Visa Electron (3 | 0.5 days)</li>
+</ul>
+
+</section>
+<section>
+<h2>Negotiable</h2>
+
+<p>User Stories should be discussed between Product and Engineering/Operations/Architecture.</p>
+
+</section>
+<section>
+<h2>Valuable to users or the company</h2>
+
+<p>Valuable to users:</p>
+
+<ul>
+<li>All errors are presented to the user and logged consistently.</li>
+</ul>
+
+<p>Not valuable to users:</p>
+
+<ul>
+<li>All error handling is done through the Logger class.</li>
+</ul>
+
+</section>
+<section>
+<h2>Estimatable</h2>
+
+<p>Engineering must be able to estimate the user stories.</p>
+
+<p>Possible problems:</p>
+
+<ul>
+<li>Engineering lacks domain knowledge -> Discuss with Produt</li>
+<li>Engineering lacks technical kowledge -> Learn/experiment/build prototype</li>
+<li>The Story is too big -> Product must separate it in smaller stories.</li>
+</ul>
+
+</section>
+<section>
+<h2>Small</h2>
+
+<h3>Compound stories</h3>
+
+<ul>
+<li>Merchants can sell products in points of sale.</li>
+</ul>
+
+<p>Split in:</p>
+
+<ul>
+<li>Merchants can create and edit points of sale.</li>
+<li>Merchant can assign products to points of sale.</li>
+<li>Users accessing a point of sale can buy products assigned to it.</li>
+</ul>
+
+</section>
+<section>
+<h2>Small</h2>
+
+<h3>Complex stories</h3>
+
+<ul>
+<li>Users can pay with Direct Debit.</li>
+</ul>
+
+<p>Split in:</p>
+
+<ul>
+<li>Investigate Direct Debit payments.</li>
+<li>Users can pay with Direct Debit.</li>
+</ul>
+
+</section>
+<section>
+<h2>How to split</h2>
+
+<ul>
+<li>Workflow steps.</li>
+<li>Business rule variations.</li>
+<li>Major effort (credit card payments).</li>
+<li>Simple/complex: look for simplest version, add complex variations.</li>
+<li>Variations in data.</li>
+<li>Data entry methods (simple vs fancy input).</li>
+<li>Performance.</li>
+<li>Operations (CRUD).</li>
+<li>Break out a spike (investigate, prototype).</li>
+</ul>
+
+</section>
+<section>
+<h2>Testable</h2>
+
+<p>All User Stories should be testable unless not possible.</p>
+
+</section>
+<section>
+<h2>Responsibilities: Engineering</h2>
+
+<ul>
+<li>Help product write stories.</li>
+<li>When asking for a story abouth the use of technology, describe the need in terms of its value to users or the company.</li>
+</ul>
+
+</section>
+<section>
+<h2>Responsibilities: Product</h2>
+
+<ul>
+<li>Write user stories that have value, are independent, are testable and appropiately sized.</li>
+<li>Discuss them with Tech.</li>
+</ul>
+
+</section>
+<section>
+<h1>Acceptance testing</h1>
+
+<ul>
+<li>Write tests upfront</li>
+<li>Test for bugs, not coverage</li>
+</ul>
+
+</section>
+<section>
+<h2>Engineering &lt;-> Product</h2>
+
+<ul>
+<li>What else do the programmers need to know about this story?</li>
+<li>What am I assuming about how this story will be implemented?</li>
+<li>Are there circumstances when this story may behave differently?</li>
+<li>What can go wrong during the story?</li>
+</ul>
+
+</section>
+<section>
+<h2>Responsibilities: Engineering</h2>
+
+<ul>
+<li>Automating the execution of acceptance tests.</li>
+<li>Thinking about additional acceptance tests when developing a new story.</li>
+<li>Unit testing the code so that acceptance tests do not need to be specified for every small detail.</li>
+</ul>
+
+</section>
+<section>
+<h2>Responsibilities: Product</h2>
+
+<ul>
+<li>Writing the acceptance tests.
+<ul>
+<li>Software is written to fulfill a vision held by Product.</li>
+</ul></li>
+<li>Executing the acceptance tests. </li>
+</ul>
+
+</section>
+<section>
+<h1>Guidelines for Good Stories</h1>
+
+<p>&nbsp;</p>
+
+</section>
+<section>
+<h2>Goal Stories</h2>
+
+<p>For each role, identify their goals.</p>
+
+<p>If the stories are too big, split them.</p>
+
+</section>
+<section>
+<h2>Closed Stories</h2>
+
+<ul>
+<li>Closed stories finishes with the achievement of a meaningful goal.</li>
+<li>Users feel that they have accomplished something.</li>
+</ul>
+
+</section>
+<section>
+<h2>Constraints</h2>
+
+<p>Identify constraints (eg support i18n in the future, reports that process 10ks of records)</p>
+
+</section>
+<section>
+<h1>Estimating</h1>
+
+<h2>Triangulation</h2>
+
+<p><img src="graphics/compare-user-stories.png" alt="Triangulation" title="" /></p>
+
+</section>
+<section>
+<h2>Responsibilities: Engineering</h2>
+
+<ul>
+<li>Defining story points so that they are relevant and usable by the team team.</li>
+<li>Sticking to that definition.</li>
+<li>Giving honest estimates (avoid temptation or pressure).</li>
+<li>Estimating as a team.</li>
+<li>Giving estimates that are consistent with other estimates.</li>
+</ul>
+
+</section>
+<section>
+<h2>Responsibilities: Product</h2>
+
+<ul>
+<li>Participating in estimation meetings, but only to answer questions and clarify stories.</li>
+</ul>
+
+</section>
+<section>
+<h1>Over to Lars!</h1>
+</section>			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+<script>
+//setInterval(function() {location.reload(false)}, 2000);
+</script>
+	</body>
+</html>
+
+
+

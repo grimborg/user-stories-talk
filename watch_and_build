@@ -1,0 +1,2 @@
+./build
+while inotifywait -e close_write slides.md fer.pl; do ./build; done
